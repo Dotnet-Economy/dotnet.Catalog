@@ -1,0 +1,15 @@
+{
+  "version": 2,
+  "dgSpecHash": "rIu4sRFoWRni7AgjdTdheVrC8MRhr/3JG8O466lY+cnq4G6KQwrTUjCX2QFwbFVItxnLpdujh069+IblEsxUVw==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\layea\\dotnet_microservices\\src\\dotnet.Catalog.Service\\dotnet.Catalog.Service.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\layea\\.nuget\\packages\\microsoft.extensions.apidescription.server\\3.0.0\\microsoft.extensions.apidescription.server.3.0.0.nupkg.sha512",
+    "C:\\Users\\layea\\.nuget\\packages\\microsoft.openapi\\1.2.3\\microsoft.openapi.1.2.3.nupkg.sha512",
+    "C:\\Users\\layea\\.nuget\\packages\\swashbuckle.aspnetcore\\5.6.3\\swashbuckle.aspnetcore.5.6.3.nupkg.sha512",
+    "C:\\Users\\layea\\.nuget\\packages\\swashbuckle.aspnetcore.swagger\\5.6.3\\swashbuckle.aspnetcore.swagger.5.6.3.nupkg.sha512",
+    "C:\\Users\\layea\\.nuget\\packages\\swashbuckle.aspnetcore.swaggergen\\5.6.3\\swashbuckle.aspnetcore.swaggergen.5.6.3.nupkg.sha512",
+    "C:\\Users\\layea\\.nuget\\packages\\swashbuckle.aspnetcore.swaggerui\\5.6.3\\swashbuckle.aspnetcore.swaggerui.5.6.3.nupkg.sha512"
+  ],
+  "logs": []
+}
