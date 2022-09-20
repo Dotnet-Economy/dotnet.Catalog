@@ -2,6 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using dotnet.Catalog.Service.Entities;
 using dotnet.Catalog.Service.Repositories;
 using dotnet.Catalog.Service.Settings;
 using Microsoft.AspNetCore.Builder;
@@ -45,7 +46,11 @@ namespace dotnet.Catalog.Service
                 return mongoClient.GetDatabase(serviceSettings.ServiceName);
             });
 
-            services.AddSingleton<IItemsRepository, ItemsRepository>();
+            services.AddSingleton<IRepository<Item>>(serviceProvider =>
+            {
+                var database = serviceProvider.GetService<IMongoDatabase>();
+                return new MongoRepository<Item>(database, "items");
+            });
 
             services.AddControllers(options =>
             {
