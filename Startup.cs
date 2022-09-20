@@ -3,8 +3,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using dotnet.Catalog.Service.Entities;
-using dotnet.Catalog.Service.Repositories;
 using dotnet.Catalog.Service.Settings;
+using dotnet.Common.MongoDB;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
@@ -22,7 +22,6 @@ namespace dotnet.Catalog.Service
 {
     public class Startup
     {
-        private ServiceSettings serviceSettings;
         public Startup(IConfiguration configuration)
         {
             Configuration = configuration;

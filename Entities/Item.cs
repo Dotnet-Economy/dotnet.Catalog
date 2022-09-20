@@ -1,4 +1,5 @@
 using System;
+using dotnet.Common;
 
 namespace dotnet.Catalog.Service.Entities
 {

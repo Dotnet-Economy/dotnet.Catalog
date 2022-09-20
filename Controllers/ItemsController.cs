@@ -4,7 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using dotnet.Catalog.Service.Dtos;
 using dotnet.Catalog.Service.Entities;
-using dotnet.Catalog.Service.Repositories;
+using dotnet.Common;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 
