@@ -1,12 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "Su9wt2TJxEeTqjjaJqRS8SZVqER21Z8I85feofyLeBwySgC3H/FHiTEeZoHgcSmK757afIdsE9pdll5nl8Td7A==",
+  "dgSpecHash": "N6O2/QKlc8PfvACyyFMK4Q4cUZF+fe77ofRXpM4GZF3sY2aSJ6yxbsHru5y2Lcm0tnfK+rl7Zmmmjof84hBdzA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\layea\\dotnet_Microservices\\src\\dotnet.Catalog.Service\\dotnet.Catalog.Service.csproj",
+  "projectFilePath": "c:\\Users\\layea\\dotnet_microservices\\src\\dotnet.Catalog.Service\\dotnet.Catalog.Service.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\layea\\.nuget\\packages\\automatonymous\\5.1.3\\automatonymous.5.1.3.nupkg.sha512",
     "C:\\Users\\layea\\.nuget\\packages\\dnsclient\\1.6.1\\dnsclient.1.6.1.nupkg.sha512",
-    "C:\\Users\\layea\\.nuget\\packages\\dotnet.common\\1.0.1\\dotnet.common.1.0.1.nupkg.sha512",
+    "C:\\Users\\layea\\.nuget\\packages\\dotnet.common\\1.0.2\\dotnet.common.1.0.2.nupkg.sha512",
     "C:\\Users\\layea\\.nuget\\packages\\greenpipes\\4.0.1\\greenpipes.4.0.1.nupkg.sha512",
     "C:\\Users\\layea\\.nuget\\packages\\masstransit\\7.3.1\\masstransit.7.3.1.nupkg.sha512",
     "C:\\Users\\layea\\.nuget\\packages\\masstransit.aspnetcore\\7.3.1\\masstransit.aspnetcore.7.3.1.nupkg.sha512",
@@ -52,7 +52,8 @@
     "C:\\Users\\layea\\.nuget\\packages\\system.security.principal.windows\\5.0.0\\system.security.principal.windows.5.0.0.nupkg.sha512",
     "C:\\Users\\layea\\.nuget\\packages\\system.text.json\\5.0.2\\system.text.json.5.0.2.nupkg.sha512",
     "C:\\Users\\layea\\.nuget\\packages\\system.threading.channels\\4.7.1\\system.threading.channels.4.7.1.nupkg.sha512",
-    "C:\\Users\\layea\\.nuget\\packages\\system.valuetuple\\4.5.0\\system.valuetuple.4.5.0.nupkg.sha512"
+    "C:\\Users\\layea\\.nuget\\packages\\system.valuetuple\\4.5.0\\system.valuetuple.4.5.0.nupkg.sha512",
+    "C:\\Users\\layea\\.nuget\\packages\\dotnet.catalog.contracts\\1.0.0\\dotnet.catalog.contracts.1.0.0.nupkg.sha512"
   ],
   "logs": []
 }

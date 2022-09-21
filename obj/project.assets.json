@@ -26,7 +26,7 @@
           "lib/net5.0/DnsClient.dll": {}
         }
       },
-      "dotnet.Common/1.0.1": {
+      "dotnet.Common/1.0.2": {
         "type": "package",
         "dependencies": {
           "MassTransit.AspNetCore": "7.3.1",
@@ -722,13 +722,13 @@
         "lib/netstandard2.1/DnsClient.xml"
       ]
     },
-    "dotnet.Common/1.0.1": {
-      "sha512": "se7Ha5HHLE/mYy1AQSQaulUCeY1QT1qLXqQ8UbZS2lhiBWlzv6Bz6usKNk8CCYKqOyyG+xTxgsL4uyd0C0kGsg==",
+    "dotnet.Common/1.0.2": {
+      "sha512": "S5Z56YaVUkkY9MJky1fg5e760FH9zkpuoBwELZqJ0FJ7snLOvi5TdUSGn0qzjr0rWGIpEXXKcz/6WhlglcQOZw==",
       "type": "package",
-      "path": "dotnet.common/1.0.1",
+      "path": "dotnet.common/1.0.2",
       "files": [
         ".nupkg.metadata",
-        "dotnet.common.1.0.1.nupkg.sha512",
+        "dotnet.common.1.0.2.nupkg.sha512",
         "dotnet.common.nuspec",
         "lib/net5.0/dotnet.Common.dll"
       ]
@@ -1875,7 +1875,7 @@
       "MassTransit.RabbitMQ >= 7.3.1",
       "Swashbuckle.AspNetCore >= 5.6.3",
       "dotnet.Catalog.Contracts >= 1.0.0",
-      "dotnet.Common >= 1.0.1"
+      "dotnet.Common >= 1.0.2"
     ]
   },
   "packageFolders": {
@@ -1885,11 +1885,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\layea\\dotnet_Microservices\\src\\dotnet.Catalog.Service\\dotnet.Catalog.Service.csproj",
+      "projectUniqueName": "c:\\Users\\layea\\dotnet_microservices\\src\\dotnet.Catalog.Service\\dotnet.Catalog.Service.csproj",
       "projectName": "dotnet.Catalog.Service",
-      "projectPath": "C:\\Users\\layea\\dotnet_Microservices\\src\\dotnet.Catalog.Service\\dotnet.Catalog.Service.csproj",
+      "projectPath": "c:\\Users\\layea\\dotnet_microservices\\src\\dotnet.Catalog.Service\\dotnet.Catalog.Service.csproj",
       "packagesPath": "C:\\Users\\layea\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\layea\\dotnet_Microservices\\src\\dotnet.Catalog.Service\\obj\\",
+      "outputPath": "c:\\Users\\layea\\dotnet_microservices\\src\\dotnet.Catalog.Service\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -1911,8 +1911,8 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "projectReferences": {
-            "C:\\Users\\layea\\dotnet_Microservices\\src\\dotnet.Catalog.Contracts\\dotnet.Catalog.Contracts.csproj": {
-              "projectPath": "C:\\Users\\layea\\dotnet_Microservices\\src\\dotnet.Catalog.Contracts\\dotnet.Catalog.Contracts.csproj"
+            "c:\\Users\\layea\\dotnet_microservices\\src\\dotnet.Catalog.Contracts\\dotnet.Catalog.Contracts.csproj": {
+              "projectPath": "c:\\Users\\layea\\dotnet_microservices\\src\\dotnet.Catalog.Contracts\\dotnet.Catalog.Contracts.csproj"
             }
           }
         }
@@ -1941,7 +1941,7 @@
           },
           "dotnet.Common": {
             "target": "Package",
-            "version": "[1.0.1, )"
+            "version": "[1.0.2, )"
           }
         },
         "imports": [
