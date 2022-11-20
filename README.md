@@ -1,3 +1,5 @@
+[![Catalog CICD](https://github.com/Dotnet-Economy/dotnet.Catalog/actions/workflows/cicd.yml/badge.svg)](https://github.com/Dotnet-Economy/dotnet.Catalog/actions/workflows/cicd.yml)
+
 # dotnet.Catalog
 
 Dotnet Economy Catalog microservice

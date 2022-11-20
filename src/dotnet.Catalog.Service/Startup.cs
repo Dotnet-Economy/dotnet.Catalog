@@ -8,6 +8,7 @@ using dotnet.Common.Identity;
 using dotnet.Common.MassTransit;
 using dotnet.Common.MongoDB;
 using dotnet.Common.Settings;
+using dotnet.Common.Logging;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
@@ -66,6 +67,8 @@ namespace dotnet.Catalog.Service
 
             services.AddHealthChecks()
                     .AddMongoDb();
+
+            services.AddSeqLogging(Configuration);
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
