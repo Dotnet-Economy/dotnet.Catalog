@@ -67,7 +67,8 @@ namespace dotnet.Catalog.Service
                     .AddMongoDb();
 
             services.AddSeqLogging(Configuration)
-                    .AddTracing(Configuration);
+                    .AddTracing(Configuration)
+                    .AddMetrics(Configuration);
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -87,6 +88,7 @@ namespace dotnet.Catalog.Service
                 });
             }
 
+            app.UseOpenTelemetryPrometheusScrapingEndpoint();
             app.UseHttpsRedirection();
 
             app.UseRouting();

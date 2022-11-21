@@ -1,14 +1,17 @@
 using System;
 using System.Collections.Generic;
+using System.Diagnostics.Metrics;
 using System.Linq;
 using System.Threading.Tasks;
 using dotnet.Catalog.Contracts;
 using dotnet.Catalog.Service.Dtos;
 using dotnet.Catalog.Service.Entities;
 using dotnet.Common;
+using dotnet.Common.Settings;
 using MassTransit;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Logging;
 
 
@@ -25,10 +28,16 @@ namespace dotnet.Catalog.Service.Controllers
         private const string AdminRole = "Admin";
         private readonly IRepository<Item> itemsRepository;
         private readonly IPublishEndpoint publishEndpoint;
-        public ItemsController(IRepository<Item> itemsRepository, IPublishEndpoint publishEndpoint)
+        private readonly Counter<int> itemUpdatedCounter;
+        public ItemsController(IRepository<Item> itemsRepository, IPublishEndpoint publishEndpoint, IConfiguration configuration)
         {
             this.itemsRepository = itemsRepository;
-            this.publishEndpoint = publishEndpoint;
+            this.publishEndpoint = publishEndpoint;   
+
+            var settings = configuration.GetSection(nameof(ServiceSettings)).Get<ServiceSettings>();
+                     
+            Meter meter = new(settings.ServiceName);
+            itemUpdatedCounter = meter.CreateCounter<int>("ItemUpdated");
         }
 
         [HttpGet]
@@ -91,9 +100,10 @@ namespace dotnet.Catalog.Service.Controllers
             existingItem.Description = updateItemDto.Description;
 
             await itemsRepository.UpdateAsync(existingItem);
-
             await publishEndpoint.Publish(new CatalogItemUpdated(existingItem.Id, existingItem.Name, existingItem.Description, existingItem.Price));
-
+            itemUpdatedCounter.Add(1,
+                                new KeyValuePair<string, object>(nameof(id), id));
+            
             return NoContent();
         }
 
