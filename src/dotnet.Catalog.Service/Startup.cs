@@ -23,7 +23,6 @@ namespace dotnet.Catalog.Service
     public class Startup
     {
         private const string AllowedOriginSettings = "AllowedOrigin";
-        private ServiceSettings serviceSettings;
         public Startup(IConfiguration configuration)
         {
             Configuration = configuration;
@@ -35,8 +34,6 @@ namespace dotnet.Catalog.Service
         //Registers services used accross the application
         public void ConfigureServices(IServiceCollection services)
         {
-            serviceSettings = Configuration.GetSection(nameof(ServiceSettings)).Get<ServiceSettings>();
-
             services.AddMongo()
                     .AddMongoRepository<Item>("items")
                     .AddMassTransitWithMessageBroker(Configuration)
